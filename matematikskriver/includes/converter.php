@@ -1,4 +1,5 @@
 <div class="content">
+    <div class="middle">
         <form action="" method="POST" id="form1" name="form1">
 
             <label id="dintekst" for="textarea" style="padding: 5px;">Din tekst:</label>
@@ -7,13 +8,14 @@
             <br>
             <input type="submit" id="submitknap" class="submitbutton" name="submitknap" value="Konvertér">
 
+
         </form>
 
         <form action="" method="GET" id="slet">
             <span id="last"><input type="submit" value="Slet" class="submitbutton" id="sletknap"></span>
                 <?php
                     if (isset($_GET['slet'])) {
-                        $dintekst = "";
+                        $dintekst = ""; echo "haha";
                     }
                 ?>
             </form>
@@ -30,3 +32,4 @@
             </div>
         </form>
     </div>
+</div>

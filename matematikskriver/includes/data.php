@@ -11,7 +11,11 @@
     $input = str_replace("\n", " \n", $input);
 
     $input = str_replace("f(", $funktion."(", $input);
-    include "includes/broeker.php";
+    $input = str_replace(" / ", " division ", $input);
+    $input = str_replace("/", "division", $input);
+
+
+    //include "includes/broeker.php";
     //echo $input;
     include "includes/vektor.php";
     //echo $input;
@@ -35,12 +39,14 @@
             //echo $pos."<br>";
 
             //                       input      replacement      start = 2    length = 3
-            $input = substr_replace($input, "<sup>$linje10</sup>", $pos, strlen($linje2));
+            $input = substr_replace($input, "<sup>$linje10</sup> ", $pos, strlen($linje2));
             //echo $input;
             //echo "<sup>$linje10</sup>";
             //echo $pos;
         }
     }
+
+    $input = str_replace("vektor ", "&#x1d497;;", $input);
 
     $charcount2 = substr_count($input, ";");
 
@@ -52,7 +58,7 @@
             $linje10 = substr($linje2, 1);
             $pos = strpos($input, ";");
 
-            $input = substr_replace($input, "<sub>$linje10</sub>", $pos, strlen($linje2));
+            $input = substr_replace($input, "<sub>$linje10</sub> ", $pos, strlen($linje2));
 
 
         }
@@ -84,11 +90,11 @@
             $linje10 = substr($linje4, 1);
             $pos1 = strpos($input, "_");
 
-            $input = substr_replace($input, "\u{0221A}<span class='overline'>$linje10</span>", $pos1, strlen($linje4));
+            $input = substr_replace($input, "\u{0221A}<spanclass='overline'>$linje10</span>", $pos1, strlen($linje4));
 
         }
     }
-
+    include "includes/division.php";
 
     $slash = " /";
 

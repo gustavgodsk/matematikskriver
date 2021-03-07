@@ -6,14 +6,19 @@
     <title title="Matematikskriver">Matematikskriver</title>
     <link rel="stylesheet" href="styles.css?version=1">
     <link rel="icon" href="includes/logo.png">
-    <?php
-    ?>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="includes/script.js"></script>
+
 </head>
-<body>
+<body onload="document.getElementById('textarea').focus();">
 
-
-
+<div class="kodelink">
     <h1 id="header">Matematikskriver</h1>
+    <span id="linkkode"><a target=”_blank” href="https://github.com/gustavgodsk/matematikskriver.git">Link til kode</a></span>
+</div>
+
+
     <br>
     <br> 
 <div class="kommandoliste">
@@ -21,15 +26,17 @@
         Kommandoliste
     </h4>
     <pre>
-        <span>x<sup>2 </sup>√ ∛ x<sub>1</sub> ƒ π</span>
-        "^" - potens, fx "x^2"
-        "_" - kvadradrod, fx "_9 = 3"
-        "__" - kubikrod
-        ";" - subscript (lav tekst), fx "x;1 - x;2"
-        " over ", sætter to tal over hinanden, fx "vektor A = x over y"
-        "/" - brøker
-        "f", - fx "f(x) = ax + b"
+        <span>x<sup>2 </sup>√ ∛ x<sub>1</sub> ƒ π 𝒗</span>
+        "^" - potens, fx "x^2",
+        "_" - kvadradrod, fx "_9 = 3",
+        "__" - kubikrod,
+        ";" - subscript (lav tekst), fx "x;1 - x;2",
+        " over " - sætter to tal over hinanden, fx "vektor A = x over y",
+        "/" - brøker,
+        " / ",
+        "f" - fx "f(x) = ax + b",
         "pi", 
+        "vektor",
 
         <span>+ - ⋅ ±</span>
         "-",
@@ -61,7 +68,7 @@
 
         <span>≈ = ≠</span>
         "ca",
-        " er "
+        " er ",
         "er ca",
         "er ca.",
         "er cirka", 
@@ -90,11 +97,14 @@
 
         <span>Fejlkilder</span>
 
-            - kan ikke håndtere brøker med potenser - fx virker "x^2/2" ikke
+            - kan ikke håndtere brøker med rødder - fx "_9/x"
             - heller ikke brøker med " over " - fx "x over 1/2"
-            - heller ikke brøker med rødder - fx "x = -b+-_b^2-4*a*c/2*a"
-
             - teksten bliver kun omskrevet hvis kommandoen er skrevet korrekt - fx virker "23over8" ikke, her skal i stedet stå "23 over 8"
+
+
 
     </pre>
 </div>
+
+
+

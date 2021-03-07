@@ -9,11 +9,9 @@
     echo "<br>";
     echo "<br>";
 
-    //vektor echo "&#x1d497;";
+
     //vektor echo "a\u{20D7}";
     //echo "{\vec {v}}";
-
-    
 
 ?>
 
