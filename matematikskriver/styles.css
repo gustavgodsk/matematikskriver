@@ -23,6 +23,7 @@ body {
     width: 450px;
     height: fit-content;
 
+
 }
 
 .kodelink #linkkode {
@@ -31,10 +32,97 @@ body {
     right: 5px;
 }
 
-h4 {
+
+.eksempler {
+    position: relative;
+    text-align: left;
+    left: 40px;
+}
+
+.eksempler h4 {
     font-size: 130%;
-    margin-left: 35px;
     line-height: 0px;
+
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    left: 40px;
+  }
+
+  .tooltip img {
+      vertical-align: text-top;
+  }
+  
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    height: fit-content;
+    font-size: 18px;
+    background-color: rgb(240, 240, 240);
+
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+#tooltip1 {
+    top: 30px;
+    left: -0.2em;
+}
+#tooltip2 {
+    top: -45px;
+    left: 7.3em;
+}
+  #tooltip3 {
+    top: 30px;
+    left: 13.5em;
+  }
+  
+  #tooltip4 {
+    top: -65px;
+    left: 20em;
+  }
+
+  #tooltip5 {
+    top: 30px;
+    left: 26em;
+  }
+
+  #tooltip6 {
+    top: -18px;
+    left: 32em;
+    width: 120px;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .size_of_img{
+}
+
+
+
+  .kommandoliste {
+    position: absolute;
+    text-align: right;
+    margin-left: auto;
+    right: 40px;
+}
+  .kommandoliste h4 {
+    font-size: 130%;
+    line-height: 0px;
+
+
 }
 
 .kommandoliste span {
@@ -118,9 +206,7 @@ h4 {
     box-shadow: inset 0 0px 0 white, inset 0 1px 0 black
 }
 
-.kommandoliste {
-    position: absolute;
-}
+
 
 
 

@@ -90,7 +90,7 @@
             $linje10 = substr($linje4, 1);
             $pos1 = strpos($input, "_");
 
-            $input = substr_replace($input, "\u{0221A}<spanclass='overline'>$linje10</span>", $pos1, strlen($linje4));
+            $input = substr_replace($input, "\u{0221A}<span class='overline'>$linje10</span>", $pos1, strlen($linje4));
 
         }
     }
@@ -104,7 +104,6 @@
         //"kvadratrod",
         //"sqrt",
         //"rod2",
-        "vinkelret",
         "gange",
         "er vinkelret på",
         "er vinkelret med", 
@@ -125,6 +124,7 @@
         "pil til venstre",
         "højrepil",
         "venstrepil",
+        "vinkelret",
 
 
         "er mindre end eller lig med",
@@ -172,7 +172,6 @@
         //$kvadratrod,
         //$kvadratrod,
         //$kvadratrod,
-        $vinkelret,
         $gange,
         $vinkelret,
         $vinkelret,
@@ -193,6 +192,7 @@
         $pilvenstre,
         $pilhøjre,
         $pilvenstre,
+        $vinkelret,
 
         $mindreendellerligmed,
         $størreendellerligmed,
