@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -112,13 +113,34 @@ body {
   }
   .size_of_img{
 }
+@-webkit-keyframes spaceboots {
 
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(3px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-2px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(3px, 0, 0);
+      }
+}
 #glass {
     width: 25px;
     position: absolute;
     left: 30em;
     top: 14em;
     z-index: 1;
+    -webkit-animation: spaceboots 0.2s 10s linear;
+    
+
+
 }
 
   .kommandoliste {
@@ -130,16 +152,20 @@ body {
   .kommandoliste h4 {
     font-size: 130%;
     line-height: 0px;
-
-
+    cursor: default;
 }
 
-.kommandoliste span {
+.kommandoliste :hover {
+    cursor: pointer;
+}
+
+#span1, #span2, #span3, #span4, #span5, #span6, #span7 {
     font-size: 140%;
     font-weight: bolder;
     border-top: black 1px solid;
     padding-left: 15px;
     padding-right: 15px;
+    cursor: default;
 }
 
 .content textarea {
